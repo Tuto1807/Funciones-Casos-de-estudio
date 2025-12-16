@@ -1,7 +1,6 @@
 #-------------------------
 #------ ZONA CODIGO ------
 # ------------------------
-#El programa solicita repetidamente el tipo de transacción ('D' para depósito,'R' para retiro) y el monto. Se comienza con un saldo inicial (ej. 1000). Si es un depósito, el monto se suma al saldo. Si es un retiro, se resta del saldo, pero solo si el saldo actual no es negativo después de la operación (condicional). Se debe contar el total de transacciones válidas realizadas. El proceso se detiene cuando el usuario indica "FIN".
 def pedir_transaccion():
     tipo = input("Ingrese el tipo de transacción (D para depósito, R para retiro) o 'FIN' para terminar: ")
     return tipo
@@ -38,3 +37,4 @@ def mostrar_resultados(saldo, transacciones_validas):
 
 saldo, transacciones_validas = procesar_transacciones()
 mostrar_resultados(saldo, transacciones_validas)
+
