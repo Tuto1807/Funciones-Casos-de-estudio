@@ -1,7 +1,6 @@
 #-------------------------
 #------ ZONA CODIGO ------
 # ------------------------
-#El programa solicita el monto de ventas alcanzado por cada vendedor. La meta predefinida es, por ejemplo, $5000. Si el monto es igual o mayor a la meta, se incrementa un contador de vendedores "con meta cumplida" y se acumula un registro de felicitación para el vendedor. Se debe contar el número total de vendedores procesados. La entrada de 0 o un valor negativo finaliza la simulación.
 def pedir_ventas():
     ventas = float(input("Ingrese el monto de ventas del vendedor (0 o negativo para terminar): "))
     return ventas
@@ -33,4 +32,5 @@ def mostrar_resultados(contador_meta_cumplida, total_vendedores, mensajes):
 #---CODIGO PRINCIPAL PYTHON---
 #-----------------------------
 contador_meta_cumplida, total_vendedores, mensajes = procesar_ventas()
+
 mostrar_resultados(contador_meta_cumplida, total_vendedores, mensajes)
