@@ -1,7 +1,6 @@
 #-------------------------
 #------ ZONA CODIGO ------
 # ------------------------
-#El programa solicita el número de horas extra trabajadas por cada empleado. Se debe aplicar una tarifa de bonificación de $15 por hora si las horas extra son mayores a 5. y una tarifa de $10 por hora si son 5 o menos. Se debe acumular el monto total de la bonificación pagada a todos los empleados. Se debe llevar la cuenta de la cantidad de empleados que recibieron bonificación. El proceso termina cuando se ingresa una cantidad de horas negativa.
 def pedir_horas_extra():
     horas = int(input("Ingrese el número de horas extra trabajadas por el empleado (negativo para terminar): "))
     return horas
@@ -29,4 +28,5 @@ def mostrar_resultados(total_bonificacion, contador_empleados_bonificados):
 #-----------------------------
 
 total_bonificacion, contador_empleados_bonificados = procesar_empleados()
+
 mostrar_resultados(total_bonificacion, contador_empleados_bonificados)
