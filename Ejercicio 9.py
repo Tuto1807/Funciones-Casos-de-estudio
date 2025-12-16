@@ -1,7 +1,6 @@
 #-------------------------
 #------ ZONA CODIGO ------
 # ------------------------
-#Se comienza con una cantidad inicial en stock (ej. 50 unidades). Se simulan ventas diarias, solicitando la cantidad vendida cada día. Esta cantidad se resta del stock actual. El punto de reposición es de 10 unidades. Después de cada venta, se debe verificar si el stock actual es menor o igual al punto de reposición (condicional). Si es asi, se debe acumular un mensaje de "Aviso de Reposición Urgente" y detener el proceso de ventas.
 def pedir_venta():
     cantidad_vendida = int(input("Ingrese la cantidad vendida hoy (0 para terminar): "))
     return cantidad_vendida
@@ -33,4 +32,5 @@ def mostrar_resultados(stock_final, mensajes):
 #-----------------------------
 
 stock_final, mensajes = procesar_ventas()
+
 
